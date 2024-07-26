@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+}
+
+.container{
+    margin: 0 5% 0 5%;
+}
+
+
+@media (max-width: 768px) {
+    .container{
+        margin: 0 1% 0 1%;
+    }
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}

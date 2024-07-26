@@ -1,0 +1,39 @@
+.categorias { grid-area: categorias; }
+.filtros { grid-area: filtros; }
+.produtos { grid-area: produtos; }
+.paginas { grid-area: paginas; }
+
+section{
+    display: grid;
+    grid-template-areas:
+      'categorias filtros filtros filtros filtros'
+      'categorias produtos produtos produtos produtos'
+      'categorias produtos produtos produtos produtos'
+      'categorias produtos produtos produtos produtos'
+      'categorias paginas paginas paginas paginas';
+    gap: 10px;
+    grid-template-columns: 20%;
+    /* background-color: aliceblue; */
+    padding: 10px;
+}
+
+/* .borda{
+    border: 1px solid black;
+} */
+
+
+@media only screen and (max-width: 1024px) {
+  section{
+    grid-template-areas:
+      'categorias filtros filtros filtros filtros'
+      'produtos produtos produtos produtos produtos'
+      'produtos produtos produtos produtos produtos'
+      'produtos produtos produtos produtos produtos'
+      'paginas paginas paginas paginas paginas';
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+  

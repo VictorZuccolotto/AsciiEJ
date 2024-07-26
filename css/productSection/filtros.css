@@ -1,0 +1,64 @@
+.filtros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+#orderBy {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.qnt-page{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.qnt-page .filtro-paginas p{
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.qnt-page .filtro-paginas a{
+    padding: 5px;
+    text-decoration: none;
+    color: #777;
+}
+.qnt-page .filtro-paginas a:hover{
+    color: black;
+}
+.qnt-page .filtro-paginas a.selected{
+    color: black;
+    text-decoration: underline;
+}
+
+
+.qnt-card a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #777;
+    transition: font-weight 0.5 ease-in;
+}
+.qnt-card a:hover{
+    color: #0d0d0d
+}
+.qnt-card .selected{
+    font-weight:bold;
+    color: black;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .qnt-card,.qnt-page{
+        display: none;
+    }
+
+
+  }
